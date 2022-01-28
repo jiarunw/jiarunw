@@ -1,5 +1,5 @@
 # About My Personal Homepage
-[Homepage](jiarunw.com)
+[Homepage](http://jiarunw.com)
 ## Tools
 * IDE
   * Adobe DreamWeaver
