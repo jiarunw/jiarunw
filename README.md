@@ -8,7 +8,7 @@ Please refer to my [Homepage](http://jiarunw.com) for more details.
 * Template
   * BootStrap
 * Domain
-  * Google Domains:jiarunw.com
+  * Google Domains
   * Annual Cost: USD 12
 * Search Engine
   * Google
