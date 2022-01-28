@@ -1,6 +1,6 @@
-# About My Personal Homepage
-[Homepage](http://jiarunw.com)
-## Tools
+# Welcome to Jiarun Wei's Repo
+Please refer to my [Homepage](http://jiarunw.com) for more details.
+## About My Homepage
 * IDE
   * Adobe DreamWeaver
 * Server
