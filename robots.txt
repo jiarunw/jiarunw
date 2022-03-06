@@ -2,3 +2,4 @@ User-agent: Googlebot
 Disallow: /
 
 Sitemap: http://jiarunw.com/sitemap.xml.gz
+Sitemap: https://seo.searchenginestartup.com/submission/smaps/55a0024c.xml.gz
