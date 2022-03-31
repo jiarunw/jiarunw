@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|neon|outline|emboss|shadow-multiple">
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+    </script>
     <title>Jiarun Wei | Homepage</title>
     <script>
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -55,19 +56,40 @@
             /* max-width: 70px; */
         }
     </style>
+
 </head>
 
 <body>
+
     <div class="hero-image">
         <div class="hero-text">
             <h1 style="font-size:60px">I'm Jiarun Wei</h1>
 
+            <div id="ID" style="display:none;">jiarunGenini</div>
             <p style="font-size: 20px;color: rgb(226, 226, 226);">Research Assistant @CMU SafeAI Lab</p>
             <!-- <p style="font-family:Arial;font-size: 15px;color: rgb(151, 151, 151);">Jiarun Wei is a Master student at Carnegie Mellon University majoring in Mechanical Engineering. He has been an exchange student in UC Berkeley during his undergraduate study. He is proficient in the field of software and web development, -->
             <!-- machine learning and robotics. He is currently working at Safe AI Lab as a research assistant for the development of an autonomous delivery robot and in charge of the perception and localization algorithms. </p> -->
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <a href="https://www.linkedin.com/in/jiarun-wei-gemini/"><button type="button" class="btn btn-outline-warning btn-lg px-4">Connect</button></a>
                 <a href="./JiarunWei_Resume.pdf"><button type="button" class="btn btn-outline-light btn-lg px-4">Resume</button></a>
+                <!-- <button onclick="myFunction()">Copy text</button> -->
+                <a><button onclick="copy('jiarunGemini')" type="button" class="btn btn-outline-success btn-lg px-4">Wechat</button></a>
+                <!-- <div onclick="select_all_and_copy(this)" style="display:none;">jiarunGenini</div> -->
+                <script>
+                    const copy = str => {
+                        const el = document.createElement('textarea');
+                        el.value = str;
+                        el.setAttribute('readonly', '');
+                        el.style.position = 'absolute';
+                        el.style.left = '-9999px';
+                        document.body.appendChild(el);
+                        el.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(el);
+                        alert("Wechat ID copied, will be redirected to Wechat!");
+                        window.location.href = "weixin://qr/";
+                    };
+                </script>
             </div>
         </div>
     </div>
