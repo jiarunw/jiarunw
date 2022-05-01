@@ -6,3 +6,4 @@ My research interest lies in autonomous driving and software development. Here i
 * Game design
 * NLP
 * Web development
+* Robotic arms
