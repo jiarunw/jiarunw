@@ -1,15 +1,8 @@
-# Welcome to Jiarun Wei's Repo
-Please refer to my [Homepage](http://jiarunw.com) for more details.
-## About My Homepage
-* IDE
-  * Adobe DreamWeaver
-* Server
-  * Github Page
-* Template
-  * BootStrap
-* Domain
-  * Google Domains
-  * Annual Cost: USD 12
-* Search Engine
-  * Google
-  * Baidu
+# Welcome to Jiarun Wei's Repo | [Homepage](http://jiarunw.com)
+
+My research interest lies in autonomous driving and software development. Here is a list of the topics of my repos:
+* Visual perception
+* Self-supervised learning
+* Game design
+* NLP
+* Web development
