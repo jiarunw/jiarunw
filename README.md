@@ -1,18 +1,15 @@
 # Hi, I'm Jiarun Wei 👋
 
-Software Engineer at **Tensor Auto** (previously AutoX) in San Jose, working on autonomous driving.
+I build **motion planning** and **perception** software for self-driving vehicles at **Tensor Auto** (previously AutoX) in San Jose.
 
-- 🚗 **Perception** — C++ INT8 / FP16 deployment of RTMDet on TensorRT, latency profiling, PyTorch → ONNX export, 2D-to-3D lifting of camera detections
-- 🧭 **Learning based planning** — trajectory scoring and filtering, automatic trajectory evaluation, planning costs and traffic rule reasoning
-- 🎓 M.S. Mechanical Engineering, Carnegie Mellon University · Exchange study at UC Berkeley
+- 🧭 **Motion planning** (2024 – now) — trajectory scoring & filtering for a learning based planner, automatic trajectory evaluation, safety costs and traffic light reasoning
+- 🚗 **Perception** (2026 – now) — INT8 / FP16 TensorRT deployment of detectors in C++, latency profiling, 2D-to-3D lifting
+- 🔧 **Integration** (2022 – 2023) — vehicle bring-up and fleet status tooling
+- 🎓 M.S. Mechanical Engineering, Carnegie Mellon University
 
-### Selected repos
-| Repo | What it is |
-| --- | --- |
-| [SafeAI_DeliveryRobot](https://github.com/jiarunw/SafeAI_DeliveryRobot) | Autonomous delivery robot at CMU Safe AI Lab — LiDAR + visual perception, FAST-LIO localization in ROS |
-| [AutoCapsuleGenerate](https://github.com/jiarunw/AutoCapsuleGenerate) | SVD based safety-region generation for robot arm collision checking |
-| [Zombies-Infection](https://github.com/jiarunw/Zombies-Infection) | Third person shooter in C++ and OpenGL |
-
-**Tools:** C/C++ · Python · PyTorch · TensorRT · ONNX · Bazel · Protobuf · ROS · Docker · Linux
+### Earlier work
+- [SafeAI_DeliveryRobot](https://github.com/jiarunw/SafeAI_DeliveryRobot) — autonomous delivery robot, LiDAR + visual perception and FAST-LIO localization in ROS
+- [AutoCapsuleGenerate](https://github.com/jiarunw/AutoCapsuleGenerate) — SVD based safety regions for robot arm collision checking
+- [Zombies-Infection](https://github.com/jiarunw/Zombies-Infection) — third person shooter in C++ / OpenGL
 
 🌐 [jiarunw.com](https://jiarunw.com) · 💼 [LinkedIn](https://www.linkedin.com/in/jiarun-wei-gemini/) · ✉️ jiarunw97@gmail.com
