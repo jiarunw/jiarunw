@@ -8,8 +8,8 @@ I build **motion planning** and **perception** software for self-driving vehicle
 - 🎓 M.S. Mechanical Engineering, Carnegie Mellon University
 
 ### Earlier work
-- [SafeAI_DeliveryRobot](https://github.com/jiarunw/SafeAI_DeliveryRobot) — autonomous delivery robot, LiDAR + visual perception and FAST-LIO localization in ROS
-- [AutoCapsuleGenerate](https://github.com/jiarunw/AutoCapsuleGenerate) — SVD based safety regions for robot arm collision checking
-- [Zombies-Infection](https://github.com/jiarunw/Zombies-Infection) — third person shooter in C++ / OpenGL
+- [SafeAI_DeliveryRobot](https://github.com/jiarunw/SafeAI_DeliveryRobot) — autonomous delivery robot: stereo R-CNN detection verified with solid-state LiDARs, NDT + IMU localization, A* / DWA navigation
+- [AutoCapsuleGenerate](https://github.com/jiarunw/AutoCapsuleGenerate) — SVD based bounding capsules for robot arm collision checking
+- [Zombies-Infection](https://github.com/jiarunw/Zombies-Infection) — 2D zombie shooter in C++ / OpenGL with A* zombie path planning
 
 🌐 [jiarunw.com](https://jiarunw.com) · 💼 [LinkedIn](https://www.linkedin.com/in/jiarun-wei-gemini/) · ✉️ jiarunw97@gmail.com
