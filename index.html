@@ -322,7 +322,8 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            min-height: 100svh;
+            /* Large viewport: still a full screen after the mobile toolbar collapses */
+            min-height: 100lvh;
         }
 
         .tail section {
