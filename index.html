@@ -311,13 +311,26 @@
         }
 
         /* ---------- Sections ---------- */
+        /* Nav jumps land on the section's top edge, so nothing from the previous section peeks above;
+           the top padding clears the stuck nav (12px + 52px) with 16px to spare */
         section {
-            padding: 64px 0 8px;
-            scroll-margin-top: 16px;
+            padding: 80px 0 0;
+        }
+
+        /* The last section and footer fill at least one screen, so every section can scroll to the top */
+        .tail {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            min-height: 100svh;
+        }
+
+        .tail section {
+            flex: 1;
         }
 
         h2 {
-            font: 500 13px/1 "JetBrains Mono", monospace;
+            font: 500 20px/1 "JetBrains Mono", monospace;
             letter-spacing: .1em;
             text-transform: uppercase;
             color: var(--accent);
@@ -733,27 +746,29 @@
             </div>
         </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <ul class="edu">
-                <li><span><b>Carnegie Mellon University</b> <span class="sub">M.S. Mechanical
-                            Engineering</span></span><span class="when">2020 – 2022</span></li>
-                <li><span><b>UC Berkeley</b> <span class="sub">Exchange study</span></span><span
-                        class="when">2019</span></li>
-                <li><span><b>Dalian University of Technology</b> <span class="sub">B.Eng. Mechanical
-                            Engineering</span></span><span class="when">2016 – 2020</span></li>
-            </ul>
-        </section>
+        <div class="tail">
+            <section id="education">
+                <h2>Education</h2>
+                <ul class="edu">
+                    <li><span><b>Carnegie Mellon University</b> <span class="sub">M.S. Mechanical
+                                Engineering</span></span><span class="when">2020 – 2022</span></li>
+                    <li><span><b>UC Berkeley</b> <span class="sub">Exchange study</span></span><span
+                            class="when">2019</span></li>
+                    <li><span><b>Dalian University of Technology</b> <span class="sub">B.Eng. Mechanical
+                                Engineering</span></span><span class="when">2016 – 2020</span></li>
+                </ul>
+            </section>
 
-        <footer>
-            <div class="links">
-                <a href="mailto:jiarunw97@gmail.com">jiarunw97@gmail.com</a>
-                <a href="https://www.linkedin.com/in/jiarun-wei-gemini/">LinkedIn</a>
-                <a href="https://github.com/jiarunw">GitHub</a>
-                <a href="./Jiarun_Wei.pdf">Resume (PDF)</a>
-            </div>
-            © Jiarun Wei
-        </footer>
+            <footer>
+                <div class="links">
+                    <a href="mailto:jiarunw97@gmail.com">jiarunw97@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/jiarun-wei-gemini/">LinkedIn</a>
+                    <a href="https://github.com/jiarunw">GitHub</a>
+                    <a href="./Jiarun_Wei.pdf">Resume (PDF)</a>
+                </div>
+                © Jiarun Wei
+            </footer>
+        </div>
     </main>
     <script>
         // First-screen rhythm: equal space above the hero card, between card and nav, and below the nav.
@@ -822,10 +837,6 @@
                 sections.forEach(function (sec, i) {
                     if (sec && sec.getBoundingClientRect().top <= 120) current = i;
                 });
-                // Last section can be too short to reach the top; treat the page bottom as reaching it
-                if (current >= 0 && innerHeight + scrollY >= document.documentElement.scrollHeight - 4) {
-                    current = sections.length - 1;
-                }
                 setActive(current);
             }
             addEventListener("scroll", onScroll, { passive: true });
