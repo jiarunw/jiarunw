@@ -529,11 +529,14 @@
                 padding: 0 16px;
             }
 
+            /* No card on phones: the text spans exactly the nav's width */
             .hero {
                 --hero-top: 16px;
-                --hero-pad: 28px;
+                --hero-pad: 0px;
                 width: calc(100% - 32px);
-                border-radius: 20px;
+                border-radius: 0;
+                background: none;
+                box-shadow: none;
             }
 
             /* Hero buttons become a single row of round icons */
@@ -749,28 +752,19 @@
         </footer>
     </main>
     <script>
-        // First-screen rhythm.
-        // Desktop: equal space above the hero card, between card and nav, and below the nav.
-        // Mobile: card stays at the top; nav is centered between card and the bottom of the screen.
+        // First-screen rhythm: equal space above the hero card, between card and nav, and below the nav.
         // The arrow sits at the middle of the space below the nav.
         // Uses a 100svh probe so mobile toolbar show/hide doesn't make the layout jump.
         (function () {
             var hero = document.querySelector(".hero"), nav = document.querySelector("nav");
             var cue = document.querySelector(".scroll-cue");
-            var mobile = matchMedia("(max-width: 560px)");
             var probe = document.createElement("div");
             probe.style.cssText = "position:absolute;top:0;left:0;width:0;visibility:hidden;height:100vh;height:100svh";
             document.body.appendChild(probe);
             function place() {
-                var screenH = probe.offsetHeight, navH = nav.offsetHeight, gap;
-                if (mobile.matches) {
-                    hero.style.marginTop = "";
-                    var heroBottom = hero.getBoundingClientRect().bottom + scrollY;
-                    gap = Math.max(16, (screenH - heroBottom - navH) / 2);
-                } else {
-                    gap = Math.max(24, (screenH - hero.offsetHeight - navH) / 3);
-                    hero.style.marginTop = gap + "px";
-                }
+                var screenH = probe.offsetHeight, navH = nav.offsetHeight;
+                var gap = Math.max(16, (screenH - hero.offsetHeight - navH) / 3);
+                hero.style.marginTop = gap + "px";
                 nav.style.marginTop = gap + "px";
                 // Center the arrow in the space below the nav (nudged up 3px for the bob animation)
                 var room = Math.max(16, gap - cue.offsetHeight);
