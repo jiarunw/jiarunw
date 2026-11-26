@@ -15,7 +15,8 @@
         rel="stylesheet">
     <style>
         :root {
-            --bg: #fafaf9;
+            /* Soft greys instead of pure white / black to ease the contrast */
+            --bg: #f5f5f4;
             --surface: #ffffff;
             --text: #1c1917;
             --muted: #57534e;
@@ -43,19 +44,19 @@
 
         @media (prefers-color-scheme: dark) {
             :root {
-                --bg: #0c0a09;
-                --surface: #1c1917;
-                --text: #f5f5f4;
+                --bg: #171513;
+                --surface: #22201d;
+                --text: #e7e5e4;
                 --muted: #a8a29e;
                 --faint: #78716c;
-                --line: #292524;
+                --line: #2e2a27;
                 --accent: #fb923c;
                 --accent-soft: #2a1a0e;
                 --hero-bg:
                     radial-gradient(ellipse 70% 60% at 85% 15%, rgba(251, 146, 60, .28), transparent 70%),
                     radial-gradient(ellipse 60% 50% at 10% 100%, rgba(194, 65, 12, .22), transparent 70%),
-                    linear-gradient(160deg, #292524 0%, #1c1917 45%, #0c0a09 100%);
-                --hero-text: #fafaf9;
+                    linear-gradient(160deg, #34302c 0%, #26231f 45%, #1c1a17 100%);
+                --hero-text: #f5f5f4;
                 --hero-muted: #d6d3d1;
                 --hero-eyebrow: #fdba74;
                 --hero-btn-edge: rgba(250, 250, 249, .35);
